@@ -97,6 +97,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="planetsButtonPressed:" destination="Yci-zc-syI" eventType="touchUpInside" id="d0l-r7-xrj"/>
+                                            <segue destination="Bte-8I-4Qo" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="uW5-er-GMc"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ksx-EW-AJk">
@@ -261,7 +262,15 @@
                 <viewControllerPlaceholder storyboardName="Stars" referencedIdentifier="StarsVC" id="qGv-ye-PhQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Th2-l0-AT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="415"/>
+            <point key="canvasLocation" x="2222" y="448"/>
+        </scene>
+        <!--PlanetsVC-->
+        <scene sceneID="lVg-EF-0nS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Planets" referencedIdentifier="PlanetsVC" id="Bte-8I-4Qo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxC-Iz-WuV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830" y="515"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="849-se-yOo">

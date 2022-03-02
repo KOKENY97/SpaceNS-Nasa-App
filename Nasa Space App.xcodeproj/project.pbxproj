@@ -16,11 +16,20 @@
 		E91944D227CD683B008287B2 /* Stars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91944D127CD683B008287B2 /* Stars.storyboard */; };
 		E91944D427CD6893008287B2 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944D327CD6893008287B2 /* StarsViewController.swift */; };
 		E91944D727CD69E6008287B2 /* StarsQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */; };
+		E956DB1C27CF9802001912B1 /* Planets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E956DB1B27CF9802001912B1 /* Planets.storyboard */; };
+		E956DB1F27CF985D001912B1 /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956DB1E27CF985D001912B1 /* PlanetsViewController.swift */; };
+		E956DB2127CF986D001912B1 /* PlanetsQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956DB2027CF986D001912B1 /* PlanetsQueryViewController.swift */; };
+		E96F3B2027CFEB5F00DD8741 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F3B1F27CFEB5F00DD8741 /* Planet.swift */; };
+		E96F3B2427CFEE0400DD8741 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F3B2227CFEE0400DD8741 /* PlanetCell.swift */; };
+		E96F3B2527CFEE0400DD8741 /* PlanetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96F3B2327CFEE0400DD8741 /* PlanetCell.xib */; };
 		E99CB41427CCF33B00974C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CB41327CCF33B00974C46 /* AppDelegate.swift */; };
 		E99CB41627CCF33B00974C46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CB41527CCF33B00974C46 /* SceneDelegate.swift */; };
 		E99CB41B27CCF33B00974C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99CB41927CCF33B00974C46 /* Main.storyboard */; };
 		E99CB41D27CCF33B00974C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99CB41C27CCF33B00974C46 /* Assets.xcassets */; };
 		E99CB42027CCF33B00974C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99CB41E27CCF33B00974C46 /* LaunchScreen.storyboard */; };
+		E9AA74D327CEAF31001342B4 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA74D227CEAF31001342B4 /* Star.swift */; };
+		E9AA74DA27CEC108001342B4 /* StarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA74D827CEC108001342B4 /* StarCell.swift */; };
+		E9AA74DB27CEC108001342B4 /* StarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9AA74D927CEC108001342B4 /* StarCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +42,12 @@
 		E91944D127CD683B008287B2 /* Stars.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stars.storyboard; sourceTree = "<group>"; };
 		E91944D327CD6893008287B2 /* StarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
 		E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsQueryViewController.swift; sourceTree = "<group>"; };
+		E956DB1B27CF9802001912B1 /* Planets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planets.storyboard; sourceTree = "<group>"; };
+		E956DB1E27CF985D001912B1 /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
+		E956DB2027CF986D001912B1 /* PlanetsQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsQueryViewController.swift; sourceTree = "<group>"; };
+		E96F3B1F27CFEB5F00DD8741 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		E96F3B2227CFEE0400DD8741 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
+		E96F3B2327CFEE0400DD8741 /* PlanetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetCell.xib; sourceTree = "<group>"; };
 		E99CB41027CCF33B00974C46 /* Nasa Space App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Space App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99CB41327CCF33B00974C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99CB41527CCF33B00974C46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +55,9 @@
 		E99CB41C27CCF33B00974C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99CB41F27CCF33B00974C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99CB42127CCF33B00974C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9AA74D227CEAF31001342B4 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		E9AA74D827CEC108001342B4 /* StarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCell.swift; sourceTree = "<group>"; };
+		E9AA74D927CEC108001342B4 /* StarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				E91944D127CD683B008287B2 /* Stars.storyboard */,
+				E9AA74D127CEAB4E001342B4 /* StarCell */,
 			);
 			path = Stars;
 			sourceTree = "<group>";
@@ -103,6 +122,49 @@
 				E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */,
 			);
 			path = Stars;
+			sourceTree = "<group>";
+		};
+		E956DB1927CF97D8001912B1 /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA74D227CEAF31001342B4 /* Star.swift */,
+			);
+			path = Star;
+			sourceTree = "<group>";
+		};
+		E956DB1A27CF97ED001912B1 /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				E956DB1B27CF9802001912B1 /* Planets.storyboard */,
+				E96F3B2127CFEDDC00DD8741 /* PlanetCell */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		E956DB1D27CF9844001912B1 /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				E956DB1E27CF985D001912B1 /* PlanetsViewController.swift */,
+				E956DB2027CF986D001912B1 /* PlanetsQueryViewController.swift */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		E96F3B1E27CFEB5300DD8741 /* Planet */ = {
+			isa = PBXGroup;
+			children = (
+				E96F3B1F27CFEB5F00DD8741 /* Planet.swift */,
+			);
+			path = Planet;
+			sourceTree = "<group>";
+		};
+		E96F3B2127CFEDDC00DD8741 /* PlanetCell */ = {
+			isa = PBXGroup;
+			children = (
+				E96F3B2227CFEE0400DD8741 /* PlanetCell.swift */,
+				E96F3B2327CFEE0400DD8741 /* PlanetCell.xib */,
+			);
+			path = PlanetCell;
 			sourceTree = "<group>";
 		};
 		E99CB40727CCF33B00974C46 = {
@@ -139,6 +201,7 @@
 		E99CB42727CCF34B00974C46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E956DB1A27CF97ED001912B1 /* Planets */,
 				E91944CE27CD6817008287B2 /* Stars */,
 				E91944C627CD2C46008287B2 /* Settings */,
 				E91944C527CD2C33008287B2 /* Auth */,
@@ -149,6 +212,7 @@
 		E99CB42827CCF35300974C46 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E956DB1D27CF9844001912B1 /* Planets */,
 				E91944D527CD68A0008287B2 /* Stars */,
 				E91944C927CD4AAD008287B2 /* Settings */,
 				E91944C427CD2759008287B2 /* Auth */,
@@ -159,8 +223,19 @@
 		E99CB42927CCF35C00974C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E96F3B1E27CFEB5300DD8741 /* Planet */,
+				E956DB1927CF97D8001912B1 /* Star */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E9AA74D127CEAB4E001342B4 /* StarCell */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA74D827CEC108001342B4 /* StarCell.swift */,
+				E9AA74D927CEC108001342B4 /* StarCell.xib */,
+			);
+			path = StarCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99CB42027CCF33B00974C46 /* LaunchScreen.storyboard in Resources */,
+				E956DB1C27CF9802001912B1 /* Planets.storyboard in Resources */,
 				E99CB41D27CCF33B00974C46 /* Assets.xcassets in Resources */,
+				E96F3B2527CFEE0400DD8741 /* PlanetCell.xib in Resources */,
 				E99CB41B27CCF33B00974C46 /* Main.storyboard in Resources */,
+				E9AA74DB27CEC108001342B4 /* StarCell.xib in Resources */,
 				E91944C827CD2C5D008287B2 /* Settings.storyboard in Resources */,
 				E91944D227CD683B008287B2 /* Stars.storyboard in Resources */,
 			);
@@ -238,11 +316,17 @@
 			files = (
 				E91944D427CD6893008287B2 /* StarsViewController.swift in Sources */,
 				E91944C127CD2102008287B2 /* SignInViewController.swift in Sources */,
+				E9AA74D327CEAF31001342B4 /* Star.swift in Sources */,
 				E91944BF27CD0A6A008287B2 /* WelcomeViewController.swift in Sources */,
 				E91944D727CD69E6008287B2 /* StarsQueryViewController.swift in Sources */,
 				E91944CD27CD4CC4008287B2 /* AccountViewController.swift in Sources */,
+				E96F3B2427CFEE0400DD8741 /* PlanetCell.swift in Sources */,
+				E956DB2127CF986D001912B1 /* PlanetsQueryViewController.swift in Sources */,
+				E9AA74DA27CEC108001342B4 /* StarCell.swift in Sources */,
 				E99CB41427CCF33B00974C46 /* AppDelegate.swift in Sources */,
+				E956DB1F27CF985D001912B1 /* PlanetsViewController.swift in Sources */,
 				E99CB41627CCF33B00974C46 /* SceneDelegate.swift in Sources */,
+				E96F3B2027CFEB5F00DD8741 /* Planet.swift in Sources */,
 				E91944C327CD25B5008287B2 /* SignUpViewController.swift in Sources */,
 				E91944CB27CD4AC0008287B2 /* SettingsViewController.swift in Sources */,
 			);

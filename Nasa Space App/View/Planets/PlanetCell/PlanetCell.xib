@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetCell" rowHeight="176" id="tQf-xA-HaG" customClass="PlanetCell" customModule="Nasa_Space_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tQf-xA-HaG" id="hF9-Y4-EzN">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4U-OC-R6K">
+                        <rect key="frame" x="10" y="10" width="268" height="156"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="k5a-ze-1WL">
+                                <rect key="frame" x="10" y="10" width="248" height="136"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjk-es-DXt">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6g-Kv-eSN">
+                                        <rect key="frame" x="0.0" y="30" width="248" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTh-mA-r7V">
+                                        <rect key="frame" x="0.0" y="58.5" width="248" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEB-xb-aWz">
+                                        <rect key="frame" x="0.0" y="87" width="248" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqf-R4-6mQ">
+                                        <rect key="frame" x="0.0" y="115.5" width="248" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="k5a-ze-1WL" secondAttribute="bottom" constant="10" id="JNQ-Gd-1WZ"/>
+                            <constraint firstAttribute="trailing" secondItem="k5a-ze-1WL" secondAttribute="trailing" constant="10" id="diC-UR-M61"/>
+                            <constraint firstItem="k5a-ze-1WL" firstAttribute="leading" secondItem="Q4U-OC-R6K" secondAttribute="leading" constant="10" id="pjo-cx-0jx"/>
+                            <constraint firstItem="k5a-ze-1WL" firstAttribute="top" secondItem="Q4U-OC-R6K" secondAttribute="top" constant="10" id="wa3-8k-6Pi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Q4U-OC-R6K" secondAttribute="trailing" constant="10" id="TIG-gD-yVo"/>
+                    <constraint firstItem="Q4U-OC-R6K" firstAttribute="leading" secondItem="hF9-Y4-EzN" secondAttribute="leading" constant="10" id="TmZ-Up-6UI"/>
+                    <constraint firstItem="Q4U-OC-R6K" firstAttribute="top" secondItem="hF9-Y4-EzN" secondAttribute="top" constant="10" id="m0p-0q-t95"/>
+                    <constraint firstAttribute="bottom" secondItem="Q4U-OC-R6K" secondAttribute="bottom" constant="10" id="wJj-wm-GK2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="QeV-T3-7Yh"/>
+            <connections>
+                <outlet property="habitableLbl" destination="Dqf-R4-6mQ" id="I00-fU-rU4"/>
+                <outlet property="massLbl" destination="OTh-mA-r7V" id="6L5-yT-i05"/>
+                <outlet property="planetNameLbl" destination="Rjk-es-DXt" id="dU3-eX-7Sd"/>
+                <outlet property="sizeLbl" destination="sEB-xb-aWz" id="rFc-lJ-kMf"/>
+                <outlet property="starNameLbl" destination="H6g-Kv-eSN" id="DHE-70-TNl"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -258,10 +258,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Shf-Xk-CaQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StarCell" id="e7m-sm-aHm">
                                         <rect key="frame" x="0.0" y="44.5" width="338" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Shf-Xk-CaQ" id="qZI-yL-P9y">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e7m-sm-aHm" id="gcT-u3-Dj3">
                                             <rect key="frame" x="0.0" y="0.0" width="338" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -294,6 +294,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mBd-ne-ufL"/>
                     <connections>
+                        <outlet property="outView" destination="JkK-tU-tMb" id="xgo-SL-dhh"/>
                         <outlet property="starsTableView" destination="pzk-N0-TFg" id="dfb-0t-7WN"/>
                     </connections>
                 </viewController>
