@@ -116,7 +116,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="queryPlanetButtonPressed:" destination="VKj-WB-u3y" eventType="touchUpInside" id="51G-Ux-ztF"/>
-                                    <segue destination="hwI-39-nco" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="yk5-88-vVB"/>
+                                    <segue destination="hwI-39-nco" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="yk5-88-vVB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaV-2e-ODY">
@@ -301,7 +301,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3im-C6-uoh"/>
+        <segue reference="yk5-88-vVB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-SpaceX-Logo-Xonly 5" width="428" height="311"/>

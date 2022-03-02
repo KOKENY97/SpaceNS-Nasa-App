@@ -142,6 +142,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="travelButtonPressed:" destination="Yci-zc-syI" eventType="touchUpInside" id="bWB-Mb-OLu"/>
+                                            <segue destination="ixI-0t-l5N" kind="presentation" modalPresentationStyle="fullScreen" id="AGF-iq-3Bg"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zvl-gc-BgW">
@@ -262,7 +263,7 @@
                 <viewControllerPlaceholder storyboardName="Stars" referencedIdentifier="StarsVC" id="qGv-ye-PhQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Th2-l0-AT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2222" y="448"/>
+            <point key="canvasLocation" x="2227" y="313"/>
         </scene>
         <!--PlanetsVC-->
         <scene sceneID="lVg-EF-0nS">
@@ -270,7 +271,15 @@
                 <viewControllerPlaceholder storyboardName="Planets" referencedIdentifier="PlanetsVC" id="Bte-8I-4Qo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UxC-Iz-WuV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="515"/>
+            <point key="canvasLocation" x="2330" y="459"/>
+        </scene>
+        <!--TravelsVC-->
+        <scene sceneID="otm-D9-fGE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Travels" referencedIdentifier="TravelsVC" id="ixI-0t-l5N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSu-DO-ZEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2554" y="518"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="849-se-yOo">

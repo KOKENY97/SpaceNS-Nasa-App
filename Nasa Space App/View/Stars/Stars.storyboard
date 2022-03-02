@@ -216,7 +216,7 @@
                         <outlet property="registerStarButton" destination="3sW-hp-1sk" id="jyF-Ng-HPn"/>
                         <outlet property="sizeTxtField" destination="G1n-Ew-ksw" id="1QK-Mo-jXN"/>
                         <outlet property="starTxtField" destination="FLJ-SH-bVK" id="a7t-jM-y5A"/>
-                        <segue destination="lei-NQ-kon" kind="presentation" identifier="StarsToQuery" modalPresentationStyle="fullScreen" id="hxu-VC-wg7"/>
+                        <segue destination="lei-NQ-kon" kind="presentation" identifier="StarsToQuery" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="hxu-VC-wg7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pn6-53-UOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -304,7 +304,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fWi-68-Pir"/>
+        <segue reference="hxu-VC-wg7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-SpaceX-Logo-Xonly 5" width="428" height="311"/>

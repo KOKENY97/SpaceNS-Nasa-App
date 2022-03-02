@@ -22,6 +22,12 @@
 		E96F3B2027CFEB5F00DD8741 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F3B1F27CFEB5F00DD8741 /* Planet.swift */; };
 		E96F3B2427CFEE0400DD8741 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F3B2227CFEE0400DD8741 /* PlanetCell.swift */; };
 		E96F3B2527CFEE0400DD8741 /* PlanetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96F3B2327CFEE0400DD8741 /* PlanetCell.xib */; };
+		E96F3B2827CFF2B500DD8741 /* Travels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96F3B2727CFF2B500DD8741 /* Travels.storyboard */; };
+		E96F3B2B27CFF95600DD8741 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F3B2A27CFF95600DD8741 /* Travel.swift */; };
+		E96F3B2E27CFF9B100DD8741 /* TravelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F3B2D27CFF9B100DD8741 /* TravelsViewController.swift */; };
+		E96F3B3027CFF9D400DD8741 /* TravelsQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F3B2F27CFF9D400DD8741 /* TravelsQueryViewController.swift */; };
+		E96F3B3627CFFF7A00DD8741 /* TravelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F3B3427CFFF7A00DD8741 /* TravelCell.swift */; };
+		E96F3B3727CFFF7A00DD8741 /* TravelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E96F3B3527CFFF7A00DD8741 /* TravelCell.xib */; };
 		E99CB41427CCF33B00974C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CB41327CCF33B00974C46 /* AppDelegate.swift */; };
 		E99CB41627CCF33B00974C46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CB41527CCF33B00974C46 /* SceneDelegate.swift */; };
 		E99CB41B27CCF33B00974C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99CB41927CCF33B00974C46 /* Main.storyboard */; };
@@ -48,6 +54,12 @@
 		E96F3B1F27CFEB5F00DD8741 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		E96F3B2227CFEE0400DD8741 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
 		E96F3B2327CFEE0400DD8741 /* PlanetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetCell.xib; sourceTree = "<group>"; };
+		E96F3B2727CFF2B500DD8741 /* Travels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Travels.storyboard; sourceTree = "<group>"; };
+		E96F3B2A27CFF95600DD8741 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		E96F3B2D27CFF9B100DD8741 /* TravelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelsViewController.swift; sourceTree = "<group>"; };
+		E96F3B2F27CFF9D400DD8741 /* TravelsQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelsQueryViewController.swift; sourceTree = "<group>"; };
+		E96F3B3427CFFF7A00DD8741 /* TravelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCell.swift; sourceTree = "<group>"; };
+		E96F3B3527CFFF7A00DD8741 /* TravelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelCell.xib; sourceTree = "<group>"; };
 		E99CB41027CCF33B00974C46 /* Nasa Space App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Space App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99CB41327CCF33B00974C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99CB41527CCF33B00974C46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +179,41 @@
 			path = PlanetCell;
 			sourceTree = "<group>";
 		};
+		E96F3B2627CFF2A000DD8741 /* Travels */ = {
+			isa = PBXGroup;
+			children = (
+				E96F3B2727CFF2B500DD8741 /* Travels.storyboard */,
+				E96F3B3127CFFF4500DD8741 /* TravelCell */,
+			);
+			path = Travels;
+			sourceTree = "<group>";
+		};
+		E96F3B2927CFF94300DD8741 /* Travels */ = {
+			isa = PBXGroup;
+			children = (
+				E96F3B2A27CFF95600DD8741 /* Travel.swift */,
+			);
+			path = Travels;
+			sourceTree = "<group>";
+		};
+		E96F3B2C27CFF99B00DD8741 /* Travels */ = {
+			isa = PBXGroup;
+			children = (
+				E96F3B2D27CFF9B100DD8741 /* TravelsViewController.swift */,
+				E96F3B2F27CFF9D400DD8741 /* TravelsQueryViewController.swift */,
+			);
+			path = Travels;
+			sourceTree = "<group>";
+		};
+		E96F3B3127CFFF4500DD8741 /* TravelCell */ = {
+			isa = PBXGroup;
+			children = (
+				E96F3B3427CFFF7A00DD8741 /* TravelCell.swift */,
+				E96F3B3527CFFF7A00DD8741 /* TravelCell.xib */,
+			);
+			path = TravelCell;
+			sourceTree = "<group>";
+		};
 		E99CB40727CCF33B00974C46 = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +233,8 @@
 		E99CB41227CCF33B00974C46 /* Nasa Space App */ = {
 			isa = PBXGroup;
 			children = (
-				E99CB41327CCF33B00974C46 /* AppDelegate.swift */,
 				E99CB41527CCF33B00974C46 /* SceneDelegate.swift */,
+				E99CB41327CCF33B00974C46 /* AppDelegate.swift */,
 				E99CB42927CCF35C00974C46 /* Model */,
 				E99CB42727CCF34B00974C46 /* View */,
 				E99CB42827CCF35300974C46 /* Controller */,
@@ -201,6 +248,7 @@
 		E99CB42727CCF34B00974C46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E96F3B2627CFF2A000DD8741 /* Travels */,
 				E956DB1A27CF97ED001912B1 /* Planets */,
 				E91944CE27CD6817008287B2 /* Stars */,
 				E91944C627CD2C46008287B2 /* Settings */,
@@ -212,6 +260,7 @@
 		E99CB42827CCF35300974C46 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E96F3B2C27CFF99B00DD8741 /* Travels */,
 				E956DB1D27CF9844001912B1 /* Planets */,
 				E91944D527CD68A0008287B2 /* Stars */,
 				E91944C927CD4AAD008287B2 /* Settings */,
@@ -223,6 +272,7 @@
 		E99CB42927CCF35C00974C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E96F3B2927CFF94300DD8741 /* Travels */,
 				E96F3B1E27CFEB5300DD8741 /* Planet */,
 				E956DB1927CF97D8001912B1 /* Star */,
 			);
@@ -296,10 +346,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96F3B2827CFF2B500DD8741 /* Travels.storyboard in Resources */,
 				E99CB42027CCF33B00974C46 /* LaunchScreen.storyboard in Resources */,
 				E956DB1C27CF9802001912B1 /* Planets.storyboard in Resources */,
 				E99CB41D27CCF33B00974C46 /* Assets.xcassets in Resources */,
 				E96F3B2527CFEE0400DD8741 /* PlanetCell.xib in Resources */,
+				E96F3B3727CFFF7A00DD8741 /* TravelCell.xib in Resources */,
 				E99CB41B27CCF33B00974C46 /* Main.storyboard in Resources */,
 				E9AA74DB27CEC108001342B4 /* StarCell.xib in Resources */,
 				E91944C827CD2C5D008287B2 /* Settings.storyboard in Resources */,
@@ -315,15 +367,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91944D427CD6893008287B2 /* StarsViewController.swift in Sources */,
+				E96F3B2E27CFF9B100DD8741 /* TravelsViewController.swift in Sources */,
 				E91944C127CD2102008287B2 /* SignInViewController.swift in Sources */,
+				E96F3B3627CFFF7A00DD8741 /* TravelCell.swift in Sources */,
 				E9AA74D327CEAF31001342B4 /* Star.swift in Sources */,
 				E91944BF27CD0A6A008287B2 /* WelcomeViewController.swift in Sources */,
 				E91944D727CD69E6008287B2 /* StarsQueryViewController.swift in Sources */,
+				E96F3B2B27CFF95600DD8741 /* Travel.swift in Sources */,
 				E91944CD27CD4CC4008287B2 /* AccountViewController.swift in Sources */,
 				E96F3B2427CFEE0400DD8741 /* PlanetCell.swift in Sources */,
 				E956DB2127CF986D001912B1 /* PlanetsQueryViewController.swift in Sources */,
 				E9AA74DA27CEC108001342B4 /* StarCell.swift in Sources */,
 				E99CB41427CCF33B00974C46 /* AppDelegate.swift in Sources */,
+				E96F3B3027CFF9D400DD8741 /* TravelsQueryViewController.swift in Sources */,
 				E956DB1F27CF985D001912B1 /* PlanetsViewController.swift in Sources */,
 				E99CB41627CCF33B00974C46 /* SceneDelegate.swift in Sources */,
 				E96F3B2027CFEB5F00DD8741 /* Planet.swift in Sources */,
