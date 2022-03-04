@@ -399,7 +399,7 @@
                                                     <action selector="techTeamButtonPressed:" destination="Red-1b-JzN" eventType="touchUpInside" id="m79-f2-syp"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBn-bc-WPz">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBn-bc-WPz">
                                                 <rect key="frame" x="184.5" y="0.0" width="154.5" height="37"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Passengers">
@@ -546,7 +546,7 @@
                                                     <segue destination="Red-1b-JzN" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hqz-gt-2Im"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzt-ws-cPD">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzt-ws-cPD">
                                                 <rect key="frame" x="184.5" y="0.0" width="154.5" height="37"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Passengers">

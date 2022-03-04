@@ -27,6 +27,7 @@
 		E9430BF527D28B45009B7AAD /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BF427D28B45009B7AAD /* Passenger.swift */; };
 		E9430BF727D28B51009B7AAD /* TechTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BF627D28B51009B7AAD /* TechTeam.swift */; };
 		E9430BF927D298BE009B7AAD /* PassengersQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BF827D298BE009B7AAD /* PassengersQueryViewController.swift */; };
+		E9430BFC27D2A468009B7AAD /* Spacecraft.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9430BFB27D2A468009B7AAD /* Spacecraft.storyboard */; };
 		E956DB1C27CF9802001912B1 /* Planets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E956DB1B27CF9802001912B1 /* Planets.storyboard */; };
 		E956DB1F27CF985D001912B1 /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956DB1E27CF985D001912B1 /* PlanetsViewController.swift */; };
 		E956DB2127CF986D001912B1 /* PlanetsQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956DB2027CF986D001912B1 /* PlanetsQueryViewController.swift */; };
@@ -72,6 +73,7 @@
 		E9430BF427D28B45009B7AAD /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
 		E9430BF627D28B51009B7AAD /* TechTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechTeam.swift; sourceTree = "<group>"; };
 		E9430BF827D298BE009B7AAD /* PassengersQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersQueryViewController.swift; sourceTree = "<group>"; };
+		E9430BFB27D2A468009B7AAD /* Spacecraft.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Spacecraft.storyboard; sourceTree = "<group>"; };
 		E956DB1B27CF9802001912B1 /* Planets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planets.storyboard; sourceTree = "<group>"; };
 		E956DB1E27CF985D001912B1 /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
 		E956DB2027CF986D001912B1 /* PlanetsQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsQueryViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +234,14 @@
 			path = "Tech Team";
 			sourceTree = "<group>";
 		};
+		E9430BFA27D2A459009B7AAD /* Spacecraft */ = {
+			isa = PBXGroup;
+			children = (
+				E9430BFB27D2A468009B7AAD /* Spacecraft.storyboard */,
+			);
+			path = Spacecraft;
+			sourceTree = "<group>";
+		};
 		E956DB1927CF97D8001912B1 /* Star */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +356,7 @@
 		E99CB42727CCF34B00974C46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9430BFA27D2A459009B7AAD /* Spacecraft */,
 				E9430BDC27D24912009B7AAD /* Technical Team */,
 				E96F3B2627CFF2A000DD8741 /* Travels */,
 				E956DB1A27CF97ED001912B1 /* Planets */,
@@ -456,6 +467,7 @@
 				E99CB41D27CCF33B00974C46 /* Assets.xcassets in Resources */,
 				E96F3B2527CFEE0400DD8741 /* PlanetCell.xib in Resources */,
 				E9430BE827D2818A009B7AAD /* TechCell.xib in Resources */,
+				E9430BFC27D2A468009B7AAD /* Spacecraft.storyboard in Resources */,
 				E9430BDE27D24923009B7AAD /* Technical Team.storyboard in Resources */,
 				E96F3B3727CFFF7A00DD8741 /* TravelCell.xib in Resources */,
 				E9430BEF27D283FD009B7AAD /* PassengerCell.xib in Resources */,
