@@ -272,6 +272,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Wp8-lf-9dL"/>
                     <connections>
+                        <outlet property="backButton" destination="MZL-xW-wfO" id="wzI-Ho-C0e"/>
                         <outlet property="outView" destination="oay-h9-BxJ" id="DAc-Mg-xZh"/>
                         <outlet property="travelsTableView" destination="9Pw-MM-hsw" id="U55-ni-wP7"/>
                     </connections>

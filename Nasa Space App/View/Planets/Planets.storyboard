@@ -291,6 +291,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="n52-sn-PV6"/>
                     <connections>
+                        <outlet property="backButton" destination="bh0-8H-eAg" id="juU-LW-csJ"/>
                         <outlet property="outView" destination="n9T-d9-ZQv" id="SOw-OX-eun"/>
                         <outlet property="planetsTableView" destination="0Ip-DQ-RIF" id="VpD-AY-eLE"/>
                     </connections>

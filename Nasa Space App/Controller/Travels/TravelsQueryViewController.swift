@@ -12,7 +12,8 @@ class TravelsQueryViewController: UIViewController {
     @IBOutlet weak var outView: UIView!
     @IBOutlet weak var travelsTableView: UITableView!
     
-
+    @IBOutlet weak var backButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +22,9 @@ class TravelsQueryViewController: UIViewController {
 
         travelsTableView.layer.cornerRadius = 40.0
         outView.layer.cornerRadius = 40.0
+        
+        backButton.layer.cornerRadius = 9.0
+        
     }
     
 

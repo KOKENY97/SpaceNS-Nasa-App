@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DF811CDF2219BBCD860577C /* Pods_Nasa_Space_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023817832F993C20FD82334E /* Pods_Nasa_Space_App.framework */; };
 		E91944BF27CD0A6A008287B2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944BE27CD0A6A008287B2 /* WelcomeViewController.swift */; };
 		E91944C127CD2102008287B2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944C027CD2102008287B2 /* SignInViewController.swift */; };
 		E91944C327CD25B5008287B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944C227CD25B5008287B2 /* SignUpViewController.swift */; };
@@ -16,6 +17,16 @@
 		E91944D227CD683B008287B2 /* Stars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91944D127CD683B008287B2 /* Stars.storyboard */; };
 		E91944D427CD6893008287B2 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944D327CD6893008287B2 /* StarsViewController.swift */; };
 		E91944D727CD69E6008287B2 /* StarsQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */; };
+		E9430BDE27D24923009B7AAD /* Technical Team.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9430BDD27D24923009B7AAD /* Technical Team.storyboard */; };
+		E9430BE127D24974009B7AAD /* TechnicalTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BE027D24974009B7AAD /* TechnicalTeamViewController.swift */; };
+		E9430BE327D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BE227D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift */; };
+		E9430BE727D2818A009B7AAD /* TechCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BE527D2818A009B7AAD /* TechCell.swift */; };
+		E9430BE827D2818A009B7AAD /* TechCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9430BE627D2818A009B7AAD /* TechCell.xib */; };
+		E9430BEE27D283FD009B7AAD /* PassengerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BEC27D283FD009B7AAD /* PassengerCell.swift */; };
+		E9430BEF27D283FD009B7AAD /* PassengerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9430BED27D283FD009B7AAD /* PassengerCell.xib */; };
+		E9430BF527D28B45009B7AAD /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BF427D28B45009B7AAD /* Passenger.swift */; };
+		E9430BF727D28B51009B7AAD /* TechTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BF627D28B51009B7AAD /* TechTeam.swift */; };
+		E9430BF927D298BE009B7AAD /* PassengersQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BF827D298BE009B7AAD /* PassengersQueryViewController.swift */; };
 		E956DB1C27CF9802001912B1 /* Planets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E956DB1B27CF9802001912B1 /* Planets.storyboard */; };
 		E956DB1F27CF985D001912B1 /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956DB1E27CF985D001912B1 /* PlanetsViewController.swift */; };
 		E956DB2127CF986D001912B1 /* PlanetsQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E956DB2027CF986D001912B1 /* PlanetsQueryViewController.swift */; };
@@ -39,6 +50,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023817832F993C20FD82334E /* Pods_Nasa_Space_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Space_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE2E8AC93655EB18269A00B /* Pods-Nasa Space App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Space App.debug.xcconfig"; path = "Target Support Files/Pods-Nasa Space App/Pods-Nasa Space App.debug.xcconfig"; sourceTree = "<group>"; };
+		B26CF4A64BC6FD21CBCAAA4C /* Pods-Nasa Space App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Space App.release.xcconfig"; path = "Target Support Files/Pods-Nasa Space App/Pods-Nasa Space App.release.xcconfig"; sourceTree = "<group>"; };
 		E91944BE27CD0A6A008287B2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E91944C027CD2102008287B2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E91944C227CD25B5008287B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +62,16 @@
 		E91944D127CD683B008287B2 /* Stars.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stars.storyboard; sourceTree = "<group>"; };
 		E91944D327CD6893008287B2 /* StarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
 		E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsQueryViewController.swift; sourceTree = "<group>"; };
+		E9430BDD27D24923009B7AAD /* Technical Team.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Technical Team.storyboard"; sourceTree = "<group>"; };
+		E9430BE027D24974009B7AAD /* TechnicalTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTeamViewController.swift; sourceTree = "<group>"; };
+		E9430BE227D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTeamQueryViewController.swift; sourceTree = "<group>"; };
+		E9430BE527D2818A009B7AAD /* TechCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechCell.swift; sourceTree = "<group>"; };
+		E9430BE627D2818A009B7AAD /* TechCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TechCell.xib; sourceTree = "<group>"; };
+		E9430BEC27D283FD009B7AAD /* PassengerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerCell.swift; sourceTree = "<group>"; };
+		E9430BED27D283FD009B7AAD /* PassengerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassengerCell.xib; sourceTree = "<group>"; };
+		E9430BF427D28B45009B7AAD /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		E9430BF627D28B51009B7AAD /* TechTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechTeam.swift; sourceTree = "<group>"; };
+		E9430BF827D298BE009B7AAD /* PassengersQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersQueryViewController.swift; sourceTree = "<group>"; };
 		E956DB1B27CF9802001912B1 /* Planets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planets.storyboard; sourceTree = "<group>"; };
 		E956DB1E27CF985D001912B1 /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
 		E956DB2027CF986D001912B1 /* PlanetsQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsQueryViewController.swift; sourceTree = "<group>"; };
@@ -77,12 +101,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF811CDF2219BBCD860577C /* Pods_Nasa_Space_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB7A13039D968D415781E0B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				023817832F993C20FD82334E /* Pods_Nasa_Space_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D39C144D7BF2A469949A1901 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AE2E8AC93655EB18269A00B /* Pods-Nasa Space App.debug.xcconfig */,
+				B26CF4A64BC6FD21CBCAAA4C /* Pods-Nasa Space App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E91944C427CD2759008287B2 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +176,60 @@
 				E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */,
 			);
 			path = Stars;
+			sourceTree = "<group>";
+		};
+		E9430BDC27D24912009B7AAD /* Technical Team */ = {
+			isa = PBXGroup;
+			children = (
+				E9430BDD27D24923009B7AAD /* Technical Team.storyboard */,
+				E9430BE927D283B2009B7AAD /* PassengerCell */,
+				E9430BE427D28141009B7AAD /* TechCell */,
+			);
+			path = "Technical Team";
+			sourceTree = "<group>";
+		};
+		E9430BDF27D2494C009B7AAD /* Technical Team */ = {
+			isa = PBXGroup;
+			children = (
+				E9430BE027D24974009B7AAD /* TechnicalTeamViewController.swift */,
+				E9430BE227D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift */,
+				E9430BF827D298BE009B7AAD /* PassengersQueryViewController.swift */,
+			);
+			path = "Technical Team";
+			sourceTree = "<group>";
+		};
+		E9430BE427D28141009B7AAD /* TechCell */ = {
+			isa = PBXGroup;
+			children = (
+				E9430BE527D2818A009B7AAD /* TechCell.swift */,
+				E9430BE627D2818A009B7AAD /* TechCell.xib */,
+			);
+			path = TechCell;
+			sourceTree = "<group>";
+		};
+		E9430BE927D283B2009B7AAD /* PassengerCell */ = {
+			isa = PBXGroup;
+			children = (
+				E9430BEC27D283FD009B7AAD /* PassengerCell.swift */,
+				E9430BED27D283FD009B7AAD /* PassengerCell.xib */,
+			);
+			path = PassengerCell;
+			sourceTree = "<group>";
+		};
+		E9430BF027D28B16009B7AAD /* Passenger */ = {
+			isa = PBXGroup;
+			children = (
+				E9430BF427D28B45009B7AAD /* Passenger.swift */,
+			);
+			path = Passenger;
+			sourceTree = "<group>";
+		};
+		E9430BF127D28B21009B7AAD /* Tech Team */ = {
+			isa = PBXGroup;
+			children = (
+				E9430BF627D28B51009B7AAD /* TechTeam.swift */,
+			);
+			path = "Tech Team";
 			sourceTree = "<group>";
 		};
 		E956DB1927CF97D8001912B1 /* Star */ = {
@@ -219,6 +315,8 @@
 			children = (
 				E99CB41227CCF33B00974C46 /* Nasa Space App */,
 				E99CB41127CCF33B00974C46 /* Products */,
+				D39C144D7BF2A469949A1901 /* Pods */,
+				AB7A13039D968D415781E0B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,6 +346,7 @@
 		E99CB42727CCF34B00974C46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9430BDC27D24912009B7AAD /* Technical Team */,
 				E96F3B2627CFF2A000DD8741 /* Travels */,
 				E956DB1A27CF97ED001912B1 /* Planets */,
 				E91944CE27CD6817008287B2 /* Stars */,
@@ -260,6 +359,7 @@
 		E99CB42827CCF35300974C46 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E9430BDF27D2494C009B7AAD /* Technical Team */,
 				E96F3B2C27CFF99B00DD8741 /* Travels */,
 				E956DB1D27CF9844001912B1 /* Planets */,
 				E91944D527CD68A0008287B2 /* Stars */,
@@ -272,6 +372,8 @@
 		E99CB42927CCF35C00974C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E9430BF127D28B21009B7AAD /* Tech Team */,
+				E9430BF027D28B16009B7AAD /* Passenger */,
 				E96F3B2927CFF94300DD8741 /* Travels */,
 				E96F3B1E27CFEB5300DD8741 /* Planet */,
 				E956DB1927CF97D8001912B1 /* Star */,
@@ -295,9 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E99CB42427CCF33B00974C46 /* Build configuration list for PBXNativeTarget "Nasa Space App" */;
 			buildPhases = (
+				C1B4C97FD3F26272B70BDC61 /* [CP] Check Pods Manifest.lock */,
 				E99CB40C27CCF33B00974C46 /* Sources */,
 				E99CB40D27CCF33B00974C46 /* Frameworks */,
 				E99CB40E27CCF33B00974C46 /* Resources */,
+				A3F292F47C761490384A45D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,7 +455,10 @@
 				E956DB1C27CF9802001912B1 /* Planets.storyboard in Resources */,
 				E99CB41D27CCF33B00974C46 /* Assets.xcassets in Resources */,
 				E96F3B2527CFEE0400DD8741 /* PlanetCell.xib in Resources */,
+				E9430BE827D2818A009B7AAD /* TechCell.xib in Resources */,
+				E9430BDE27D24923009B7AAD /* Technical Team.storyboard in Resources */,
 				E96F3B3727CFFF7A00DD8741 /* TravelCell.xib in Resources */,
+				E9430BEF27D283FD009B7AAD /* PassengerCell.xib in Resources */,
 				E99CB41B27CCF33B00974C46 /* Main.storyboard in Resources */,
 				E9AA74DB27CEC108001342B4 /* StarCell.xib in Resources */,
 				E91944C827CD2C5D008287B2 /* Settings.storyboard in Resources */,
@@ -361,6 +468,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A3F292F47C761490384A45D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa Space App/Pods-Nasa Space App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa Space App/Pods-Nasa Space App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa Space App/Pods-Nasa Space App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B4C97FD3F26272B70BDC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nasa Space App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E99CB40C27CCF33B00974C46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -368,16 +517,23 @@
 			files = (
 				E91944D427CD6893008287B2 /* StarsViewController.swift in Sources */,
 				E96F3B2E27CFF9B100DD8741 /* TravelsViewController.swift in Sources */,
+				E9430BF527D28B45009B7AAD /* Passenger.swift in Sources */,
 				E91944C127CD2102008287B2 /* SignInViewController.swift in Sources */,
+				E9430BE127D24974009B7AAD /* TechnicalTeamViewController.swift in Sources */,
 				E96F3B3627CFFF7A00DD8741 /* TravelCell.swift in Sources */,
 				E9AA74D327CEAF31001342B4 /* Star.swift in Sources */,
+				E9430BF727D28B51009B7AAD /* TechTeam.swift in Sources */,
 				E91944BF27CD0A6A008287B2 /* WelcomeViewController.swift in Sources */,
 				E91944D727CD69E6008287B2 /* StarsQueryViewController.swift in Sources */,
 				E96F3B2B27CFF95600DD8741 /* Travel.swift in Sources */,
+				E9430BE327D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift in Sources */,
 				E91944CD27CD4CC4008287B2 /* AccountViewController.swift in Sources */,
 				E96F3B2427CFEE0400DD8741 /* PlanetCell.swift in Sources */,
 				E956DB2127CF986D001912B1 /* PlanetsQueryViewController.swift in Sources */,
+				E9430BE727D2818A009B7AAD /* TechCell.swift in Sources */,
+				E9430BEE27D283FD009B7AAD /* PassengerCell.swift in Sources */,
 				E9AA74DA27CEC108001342B4 /* StarCell.swift in Sources */,
+				E9430BF927D298BE009B7AAD /* PassengersQueryViewController.swift in Sources */,
 				E99CB41427CCF33B00974C46 /* AppDelegate.swift in Sources */,
 				E96F3B3027CFF9D400DD8741 /* TravelsQueryViewController.swift in Sources */,
 				E956DB1F27CF985D001912B1 /* PlanetsViewController.swift in Sources */,
@@ -528,6 +684,7 @@
 		};
 		E99CB42527CCF33B00974C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE2E8AC93655EB18269A00B /* Pods-Nasa Space App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -556,6 +713,7 @@
 		};
 		E99CB42627CCF33B00974C46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26CF4A64BC6FD21CBCAAA4C /* Pods-Nasa Space App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

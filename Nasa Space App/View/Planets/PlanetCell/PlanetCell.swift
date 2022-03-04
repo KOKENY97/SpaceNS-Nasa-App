@@ -17,15 +17,19 @@ class PlanetCell: UITableViewCell {
     @IBOutlet weak var habitableLbl: UILabel!
     
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
+    
+    var planets: Planet!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(planets: Planet) {
+        self.planets = planets
+        planetNameLbl.text = self.planets.planetName
+        starNameLbl.text = self.planets.starName
+        massLbl.text = "\(self.planets.mass)"
+        sizeLbl.text = "\(self.planets.size)"
+        habitableLbl.text = self.planets.habitable
     }
     
 }

@@ -33,6 +33,8 @@ class PlanetsViewController: UIViewController {
         
         outView.layer.cornerRadius = 40.0
         habitableButton.layer.cornerRadius = 12.5
+        
+        menuButton.layer.cornerRadius = 9.0
     }
     
     @IBAction func habitableButtonPressed(_ sender: UIButton) {

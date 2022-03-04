@@ -14,17 +14,21 @@ class StarCell: UITableViewCell {
     @IBOutlet weak var massLbl: UILabel!
     @IBOutlet weak var sizeLbl: UILabel!
     @IBOutlet weak var luminosityLbl: UILabel!
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
+    var stars: Star!
+
+    func configureCell(stars: Star) {
+        self.stars = stars
+        starNameLbl.text = self.stars.starName
+        galaxyLbl.text = self.stars.galaxyName
+        massLbl.text = "\(self.stars.mass)"
+        sizeLbl.text = "\(self.stars.size)"
+        luminosityLbl.text = self.stars.luminosity
+    }
+
 }
+

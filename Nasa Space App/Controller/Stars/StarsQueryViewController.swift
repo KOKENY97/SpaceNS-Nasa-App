@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class StarsQueryViewController: UIViewController {
-
+    
     @IBOutlet weak var starsTableView: UITableView!
     @IBOutlet weak var outView: UIView!
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    var stars: [Star] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,15 +26,30 @@ class StarsQueryViewController: UIViewController {
         
         outView.layer.cornerRadius = 40.0
         starsTableView.layer.cornerRadius = 40.0
-
+        
+        backButton.layer.cornerRadius = 9.0
+        
+        getMethod()
+        
         
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
     }
     
-
+    func getMethod() {
+        Alamofire.request("https://desafionasa.herokuapp.com/estrelas")
+            .responseJSON { (response) in
+                let decoder = JSONDecoder()
+                let stars: [Star] = try! decoder.decode([Star].self, from: response.data!)
+                
+                self.stars = stars
+                self.starsTableView.reloadData()
+            }
+    }
+    
 }
+
 
 extension StarsQueryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,11 +58,8 @@ extension StarsQueryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StarCell", for: indexPath) as! StarCell
-        cell.starNameLbl.text = stars[indexPath.row].starName
-        cell.galaxyLbl.text = stars[indexPath.row].galaxyName
-        cell.massLbl.text = stars[indexPath.row].mass
-        cell.sizeLbl.text = stars[indexPath.row].size
-        cell.luminosityLbl.text = stars[indexPath.row].luminosity
+        let stars = stars[indexPath.row]
+        cell.configureCell(stars: stars)
         return cell
     }
     

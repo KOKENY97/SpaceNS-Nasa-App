@@ -7,21 +7,12 @@
 
 import Foundation
 
-struct Planet {
+struct Planet: Codable {
     let planetName:String
     let starName: String
-    let mass: String
-    let size: String
+    let mass: Float
+    let size: Float
     let habitable: String
 }
 
-var planets: [Planet] = [
-    Planet(planetName: "Terra", starName: "Sol", mass: "5.9722E24 kg", size: "12742 km", habitable: "Y"),
-    Planet(planetName: "Kepler", starName: "Kepler - 438", mass: "Unknown", size: "12742 km", habitable: "Y"),
-    Planet(planetName: "Terra", starName: "Sol", mass: "5.9722E24 kg", size: "12742 km", habitable: "Y"),
-    Planet(planetName: "Terra", starName: "Sol", mass: "5.9722E24 kg", size: "12742 km", habitable: "Y"),
-    Planet(planetName: "Terra", starName: "Sol", mass: "5.9722E24 kg", size: "12742 km", habitable: "Y"),
-    Planet(planetName: "Terra", starName: "Sol", mass: "5.9722E24 kg", size: "12742 km", habitable: "Y"),
-    Planet(planetName: "Terra", starName: "Sol", mass: "5.9722E24 kg", size: "12742 km", habitable: "Y"),
-    Planet(planetName: "Terra", starName: "Sol", mass: "5.9722E24 kg", size: "12742 km", habitable: "Y"),
-]
+

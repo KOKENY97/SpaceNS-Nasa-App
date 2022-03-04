@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class StarsViewController: UIViewController {
     
@@ -35,11 +36,44 @@ class StarsViewController: UIViewController {
         
         menuButton.layer.cornerRadius = 9.0
         
-
+        
         
     }
     
     @IBAction func registerStarButtonPressed(_ sender: UIButton) {
+        func postMethod() {
+            
+            let params: Parameters = [
+                "starName": starTxtField.text!,
+                "galaxyName": galaxyTxtField.text!,
+                "mass": massTxtField.text!,
+                "size": sizeTxtField.text!,
+                "luminosity": luminosityTxtField.text!
+            ]
+            
+            Alamofire.request("https://desafionasa.herokuapp.com/estrelas", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200 ..< 299).responseJSON { AFdata in
+                do {
+                    guard let jsonObject = try JSONSerialization.jsonObject(with: AFdata.data!) as? [String: Any] else {
+                        print("Error: Cannot convert data to JSON object")
+                        return
+                    }
+                    guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
+                        print("Error: Cannot convert JSON object to Pretty JSON data")
+                        return
+                    }
+                    guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
+                        print("Error: Could print JSON in String")
+                        return
+                    }
+                    
+                    print(prettyPrintedJson)
+                } catch {
+                    print("Error: Trying to convert JSON data to string")
+                    return
+                }
+            }
+            
+        }
     }
     
     @IBAction func queryStarButtonPressed(_ sender: UIButton) {
@@ -49,7 +83,7 @@ class StarsViewController: UIViewController {
     @IBAction func menuButtonPressed(_ sender: UIButton) {
     }
     
-
-   
-
+    
+    
+    
 }

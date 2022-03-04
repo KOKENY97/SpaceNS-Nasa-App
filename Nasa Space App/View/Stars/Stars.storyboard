@@ -67,7 +67,7 @@
                                 <rect key="frame" x="35" y="345" width="113" height="34"/>
                                 <color key="tintColor" white="0.2108843537" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9y-Pt-8Yc">
                                 <rect key="frame" x="49" y="318" width="44.5" height="15"/>
@@ -113,7 +113,7 @@
                                 <rect key="frame" x="196" y="416" width="113" height="34"/>
                                 <color key="tintColor" white="0.2108843537" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5E-06-erO">
                                 <rect key="frame" x="210" y="390" width="51" height="15"/>
@@ -294,6 +294,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mBd-ne-ufL"/>
                     <connections>
+                        <outlet property="backButton" destination="IjC-yk-6WQ" id="1nd-v1-huc"/>
                         <outlet property="outView" destination="JkK-tU-tMb" id="xgo-SL-dhh"/>
                         <outlet property="starsTableView" destination="pzk-N0-TFg" id="dfb-0t-7WN"/>
                     </connections>
@@ -304,7 +305,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hxu-VC-wg7"/>
+        <segue reference="fWi-68-Pir"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-SpaceX-Logo-Xonly 5" width="428" height="311"/>

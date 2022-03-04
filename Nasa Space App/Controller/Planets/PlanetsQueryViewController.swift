@@ -6,11 +6,16 @@
 //
 
 import UIKit
+import Alamofire
 
 class PlanetsQueryViewController: UIViewController {
     
     @IBOutlet weak var outView: UIView!
     @IBOutlet weak var planetsTableView: UITableView!
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    var planets: [Planet] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,21 @@ class PlanetsQueryViewController: UIViewController {
 
         outView.layer.cornerRadius = 40.0
         planetsTableView.layer.cornerRadius = 40.0
+        
+        backButton.layer.cornerRadius = 9.0
+        
+        getMethod()
+    }
+    
+    func getMethod() {
+        Alamofire.request("https://desafionasa.herokuapp.com/planetas")
+            .responseJSON { (response) in
+                let decoder = JSONDecoder()
+                let planets: [Planet] = try! decoder.decode([Planet].self, from: response.data!)
+                
+                self.planets = planets
+                self.planetsTableView.reloadData()
+            }
     }
     
 
@@ -33,11 +53,8 @@ extension PlanetsQueryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlanetCell", for: indexPath) as! PlanetCell
-        cell.planetNameLbl.text = planets[indexPath.row].planetName
-        cell.starNameLbl.text = planets[indexPath.row].starName
-        cell.massLbl.text = planets[indexPath.row].mass
-        cell.sizeLbl.text = planets[indexPath.row].size
-        cell.habitableLbl.text = planets[indexPath.row].habitable
+        let planets = planets[indexPath.row]
+        cell.configureCell(planets: planets)
         return cell
     }
     
