@@ -49,6 +49,8 @@ class PassengersQueryViewController: UIViewController {
                 
                 self.passengers = passengers
                 self.peopleTableView.reloadData()
+                
+                
             }
     }
     

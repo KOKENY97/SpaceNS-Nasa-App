@@ -21,8 +21,9 @@ class PassengerCell: UITableViewCell {
     }
     
     var passengers: Passenger!
-
+    
     func configureCell(passengers: Passenger) {
+        
         self.passengers = passengers
         nameLbl.text = self.passengers.fullName
         dateLbl.text = self.passengers.birthDate
@@ -30,6 +31,13 @@ class PassengerCell: UITableViewCell {
         professionLbl.text = self.passengers.profession
         emailLbl.text = self.passengers.email
         spacecraftLbl.text = self.passengers.spaceCraft
+        
+        if professionLbl.text == nil {
+            professionLbl.isHidden = true
+            
+        }
+        
+        
     }
     
 }

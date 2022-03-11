@@ -45,9 +45,14 @@
 		E99CB41B27CCF33B00974C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99CB41927CCF33B00974C46 /* Main.storyboard */; };
 		E99CB41D27CCF33B00974C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99CB41C27CCF33B00974C46 /* Assets.xcassets */; };
 		E99CB42027CCF33B00974C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99CB41E27CCF33B00974C46 /* LaunchScreen.storyboard */; };
+		E9A7748427D654A1003D5412 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A7748327D654A1003D5412 /* Map.storyboard */; };
 		E9AA74D327CEAF31001342B4 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA74D227CEAF31001342B4 /* Star.swift */; };
 		E9AA74DA27CEC108001342B4 /* StarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA74D827CEC108001342B4 /* StarCell.swift */; };
 		E9AA74DB27CEC108001342B4 /* StarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9AA74D927CEC108001342B4 /* StarCell.xib */; };
+		E9D1E83327D67D1C008237F8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1E83227D67D1C008237F8 /* MapViewController.swift */; };
+		E9E1039227D3CB4600F89037 /* SpacecraftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E1039127D3CB4600F89037 /* SpacecraftViewController.swift */; };
+		E9E1039527D3DD3D00F89037 /* SpacecraftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E1039427D3DD3D00F89037 /* SpacecraftCell.swift */; };
+		E9E1039827D3DEAF00F89037 /* Spacecraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E1039727D3DEAF00F89037 /* Spacecraft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,9 +98,14 @@
 		E99CB41C27CCF33B00974C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99CB41F27CCF33B00974C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99CB42127CCF33B00974C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A7748327D654A1003D5412 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		E9AA74D227CEAF31001342B4 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		E9AA74D827CEC108001342B4 /* StarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCell.swift; sourceTree = "<group>"; };
 		E9AA74D927CEC108001342B4 /* StarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarCell.xib; sourceTree = "<group>"; };
+		E9D1E83227D67D1C008237F8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E9E1039127D3CB4600F89037 /* SpacecraftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacecraftViewController.swift; sourceTree = "<group>"; };
+		E9E1039427D3DD3D00F89037 /* SpacecraftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacecraftCell.swift; sourceTree = "<group>"; };
+		E9E1039727D3DEAF00F89037 /* Spacecraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacecraft.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				E9430BFB27D2A468009B7AAD /* Spacecraft.storyboard */,
+				E9E1039327D3DC8B00F89037 /* SpacecraftCell */,
 			);
 			path = Spacecraft;
 			sourceTree = "<group>";
@@ -356,6 +367,7 @@
 		E99CB42727CCF34B00974C46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9A7748227D65490003D5412 /* Map */,
 				E9430BFA27D2A459009B7AAD /* Spacecraft */,
 				E9430BDC27D24912009B7AAD /* Technical Team */,
 				E96F3B2627CFF2A000DD8741 /* Travels */,
@@ -370,6 +382,8 @@
 		E99CB42827CCF35300974C46 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E9A7748527D654C5003D5412 /* Map */,
+				E9E1039027D3CB2E00F89037 /* Spacecraft */,
 				E9430BDF27D2494C009B7AAD /* Technical Team */,
 				E96F3B2C27CFF99B00DD8741 /* Travels */,
 				E956DB1D27CF9844001912B1 /* Planets */,
@@ -383,13 +397,30 @@
 		E99CB42927CCF35C00974C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E9E1039627D3DE9300F89037 /* Spacecraft */,
 				E9430BF127D28B21009B7AAD /* Tech Team */,
 				E9430BF027D28B16009B7AAD /* Passenger */,
-				E96F3B2927CFF94300DD8741 /* Travels */,
 				E96F3B1E27CFEB5300DD8741 /* Planet */,
+				E96F3B2927CFF94300DD8741 /* Travels */,
 				E956DB1927CF97D8001912B1 /* Star */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E9A7748227D65490003D5412 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E9A7748327D654A1003D5412 /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E9A7748527D654C5003D5412 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1E83227D67D1C008237F8 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		E9AA74D127CEAB4E001342B4 /* StarCell */ = {
@@ -399,6 +430,30 @@
 				E9AA74D927CEC108001342B4 /* StarCell.xib */,
 			);
 			path = StarCell;
+			sourceTree = "<group>";
+		};
+		E9E1039027D3CB2E00F89037 /* Spacecraft */ = {
+			isa = PBXGroup;
+			children = (
+				E9E1039127D3CB4600F89037 /* SpacecraftViewController.swift */,
+			);
+			path = Spacecraft;
+			sourceTree = "<group>";
+		};
+		E9E1039327D3DC8B00F89037 /* SpacecraftCell */ = {
+			isa = PBXGroup;
+			children = (
+				E9E1039427D3DD3D00F89037 /* SpacecraftCell.swift */,
+			);
+			path = SpacecraftCell;
+			sourceTree = "<group>";
+		};
+		E9E1039627D3DE9300F89037 /* Spacecraft */ = {
+			isa = PBXGroup;
+			children = (
+				E9E1039727D3DEAF00F89037 /* Spacecraft.swift */,
+			);
+			path = Spacecraft;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +518,7 @@
 			files = (
 				E96F3B2827CFF2B500DD8741 /* Travels.storyboard in Resources */,
 				E99CB42027CCF33B00974C46 /* LaunchScreen.storyboard in Resources */,
+				E9A7748427D654A1003D5412 /* Map.storyboard in Resources */,
 				E956DB1C27CF9802001912B1 /* Planets.storyboard in Resources */,
 				E99CB41D27CCF33B00974C46 /* Assets.xcassets in Resources */,
 				E96F3B2527CFEE0400DD8741 /* PlanetCell.xib in Resources */,
@@ -529,14 +585,18 @@
 			files = (
 				E91944D427CD6893008287B2 /* StarsViewController.swift in Sources */,
 				E96F3B2E27CFF9B100DD8741 /* TravelsViewController.swift in Sources */,
+				E9E1039227D3CB4600F89037 /* SpacecraftViewController.swift in Sources */,
 				E9430BF527D28B45009B7AAD /* Passenger.swift in Sources */,
 				E91944C127CD2102008287B2 /* SignInViewController.swift in Sources */,
 				E9430BE127D24974009B7AAD /* TechnicalTeamViewController.swift in Sources */,
 				E96F3B3627CFFF7A00DD8741 /* TravelCell.swift in Sources */,
+				E9E1039827D3DEAF00F89037 /* Spacecraft.swift in Sources */,
 				E9AA74D327CEAF31001342B4 /* Star.swift in Sources */,
 				E9430BF727D28B51009B7AAD /* TechTeam.swift in Sources */,
 				E91944BF27CD0A6A008287B2 /* WelcomeViewController.swift in Sources */,
 				E91944D727CD69E6008287B2 /* StarsQueryViewController.swift in Sources */,
+				E9E1039527D3DD3D00F89037 /* SpacecraftCell.swift in Sources */,
+				E9D1E83327D67D1C008237F8 /* MapViewController.swift in Sources */,
 				E96F3B2B27CFF95600DD8741 /* Travel.swift in Sources */,
 				E9430BE327D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift in Sources */,
 				E91944CD27CD4CC4008287B2 /* AccountViewController.swift in Sources */,

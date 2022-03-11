@@ -7,11 +7,12 @@
 
 import Foundation
 
+//Passenger Struct
 struct Passenger: Codable {
     let fullName: String
     let birthDate: String
     let sex: String
-    let profession: String
+    let profession: String?
     let email: String
     let spaceCraft: String
 }

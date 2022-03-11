@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SignInViewController: UIViewController {
     
@@ -19,12 +20,18 @@ class SignInViewController: UIViewController {
 
         signInButton.layer.cornerRadius = 8
         
+        
     }
     
     @IBAction func signInButtonPressed(_ sender: UIButton) {
+       
+       
         performSegue(withIdentifier: "SignInToSettings", sender: true)
     }
     
    
 
 }
+
+
+

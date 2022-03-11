@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Technical Team Struct
 struct TechTeam: Codable {
     let birthDate: String
     let fullName: String

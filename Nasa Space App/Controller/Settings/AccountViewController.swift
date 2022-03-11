@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AccountViewController: UIViewController {
 
@@ -22,7 +23,6 @@ class AccountViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,12 +31,13 @@ class AccountViewController: UIViewController {
         
         menuButton.layer.cornerRadius = 8.0
         
+       
+        
     }
     
 
     @IBAction func menuButtonPressed(_ sender: UIButton) {
     }
     
-
     
 }

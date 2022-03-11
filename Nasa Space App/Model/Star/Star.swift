@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Star Struct
 struct Star: Codable {
     let starName: String
     let galaxyName: String

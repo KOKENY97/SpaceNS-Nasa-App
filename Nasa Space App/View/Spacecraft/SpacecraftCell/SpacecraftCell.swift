@@ -9,4 +9,7 @@ import UIKit
 
 class SpacecraftCell: UICollectionViewCell {
     
+    @IBOutlet weak var imgView: UIImageView!
+    
+    
 }

@@ -601,6 +601,9 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ZS7-ds-ClI" kind="presentation" modalPresentationStyle="fullScreen" id="dWf-Bl-cfn"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2560px-SpaceX-Logo-Xonly 3" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-rs-swG">
                                 <rect key="frame" x="87" y="74" width="220" height="88"/>
@@ -666,6 +669,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hqz-gt-2Im"/>
+        <segue reference="dWf-Bl-cfn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-SpaceX-Logo-Xonly 3" width="220" height="83"/>

@@ -6,24 +6,32 @@
 //
 
 import UIKit
+import WebKit
 
 class MapViewController: UIViewController {
-
+    
+    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var innerView: UIView!
+    @IBOutlet weak var outView: UIView!
+    
+    @IBOutlet weak var queryTravelButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.webView.load(URLRequest(url: URL(string: "https://www.google.com/sky/#latitude=82.20919538369394&longitude=13.211958660829456&zoom=9&Spitzer=0.00&ChandraXO=0.00&Galex=0.00&IRAS=0.00&WMAP=0.00&Cassini=0.00&slide=1&mI=-1&oI=-1")!))
+        
+        outView.layer.cornerRadius = 40.0
+        innerView.layer.cornerRadius = 40.0
+        
+        queryTravelButton.layer.borderWidth = 1
+        queryTravelButton.layer.borderColor = UIColor.white.cgColor
+        queryTravelButton.layer.cornerRadius = 9.0
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func queryTravelButtonPressed(_ sender: UIButton) {
     }
-    */
+    
 
 }

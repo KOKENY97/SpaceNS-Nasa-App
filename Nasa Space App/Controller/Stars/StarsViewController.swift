@@ -38,6 +38,7 @@ class StarsViewController: UIViewController {
         
         
         
+        
     }
     
     @IBAction func registerStarButtonPressed(_ sender: UIButton) {
@@ -46,8 +47,8 @@ class StarsViewController: UIViewController {
             let params: Parameters = [
                 "starName": starTxtField.text!,
                 "galaxyName": galaxyTxtField.text!,
-                "mass": massTxtField.text!,
-                "size": sizeTxtField.text!,
+                "mass": Float(massTxtField.text!)!,
+                "size": Float(sizeTxtField.text!)!,
                 "luminosity": luminosityTxtField.text!
             ]
             
@@ -72,6 +73,7 @@ class StarsViewController: UIViewController {
                     return
                 }
             }
+            
             
         }
     }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Planet Struct
 struct Planet: Codable {
     let planetName:String
     let starName: String

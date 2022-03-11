@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Travel Struct
 struct Travel: Codable {
     let planetName: String
     let spacecraftName: String
