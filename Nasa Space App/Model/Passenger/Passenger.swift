@@ -15,4 +15,5 @@ struct Passenger: Codable {
     let profession: String?
     let email: String
     let spaceCraft: String
+    //let password: String
 }

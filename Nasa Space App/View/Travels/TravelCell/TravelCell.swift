@@ -16,15 +16,18 @@ class TravelCell: UITableViewCell {
     @IBOutlet weak var distanceLbl: UILabel!
     
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
+    
+    var travels: Travel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(travels: Travel) {
+        self.travels = travels
+        planetNameLBl.text = self.travels.planetName
+        spacecraftNameLbl.text = self.travels.spaceCraft
+        durationLbl.text = "\(self.travels.duration)"
+        distanceLbl.text = "\(self.travels.distance)"
     }
     
 }

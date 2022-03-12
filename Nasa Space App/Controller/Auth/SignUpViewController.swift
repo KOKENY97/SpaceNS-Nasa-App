@@ -1,9 +1,3 @@
-//
-//  SignUpViewController.swift
-//  Nasa Space App
-//
-//  Created by user209843 on 2/28/22.
-//
 
 import UIKit
 import Alamofire
@@ -22,54 +16,54 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var registerButton: UIButton!
     
+    var passenger: Passenger!
+    
+    var token: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         registerButton.layer.cornerRadius = 8.0
     }
     
-
+    
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         
-        func postMethod() {
-            
-            let params: Parameters = [
-                //"birthDate": dateTxtField.text!,
-                //"fullName": nameTxtField.text!,
-                //"sex": sexTxtField.text!,
-                //"profession": professionTxtField.text!,
-                "email": emailTxtField.text!,
-                //"spaceCraft": spacecraftTxtField.text!,
-                "password": passTxtField.text!
-                
-            ]
-            
-            Alamofire.request("https://desafionasa.herokuapp.com/autenticacao", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200 ..< 299).responseJSON { AFdata in
-                do {
-                    guard let jsonObject = try JSONSerialization.jsonObject(with: AFdata.data!) as? [String: Any] else {
-                        print("Error: Cannot convert data to JSON object")
-                        return
-                    }
-                    guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
-                        print("Error: Cannot convert JSON object to Pretty JSON data")
-                        return
-                    }
-                    guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
-                        print("Error: Could print JSON in String")
-                        return
-                    }
-                    
-                    print(prettyPrintedJson)
-                } catch {
-                    print("Error: Trying to convert JSON data to string")
-                    return
-                }
-            }
-            
+        let params: [String:Any?] = [
+            "fullName": nameTxtField.text,
+            "birthDate": dateTxtField.text,
+            "sex": sexTxtField.text,
+            "profession": professionTxtField.text,
+            "email": emailTxtField.text,
+            "password": passTxtField.text,
+            "spaceCraft": spacecraftTxtField.text,
+           
+        ]
+        
+        //POST Transfer Data
+        guard let url = URL(string: "https://desafionasa.herokuapp.com/passageiros") else { return
         }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
+        
+        let session = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let e = error {
+                print(e.localizedDescription)
+            } else {
+                let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
+                print(jsonRes ?? nil)
+            }
+        }.resume()
         
         performSegue(withIdentifier: "SignUpToSettings", sender: true)
     }
     
-
+    
+    
+    
 }

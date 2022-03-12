@@ -28,6 +28,9 @@ class SpacecraftViewController: UIViewController {
     
     var spacecraft: Spacecraft!
     
+    var token: Authentication!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,7 +54,7 @@ class SpacecraftViewController: UIViewController {
     }
     
     func getMethod() {
-        Alamofire.request("https://desafionasa.herokuapp.com/naves")
+        Alamofire.request("https://desafionasa.herokuapp.com/naves?token=")
             .responseJSON { (response) in
                 let decoder = JSONDecoder()
                 let spacecraft: Spacecraft = try! decoder.decode(Spacecraft.self, from: response.data!)
@@ -85,18 +88,18 @@ class SpacecraftViewController: UIViewController {
 }
 
 extension SpacecraftViewController: UICollectionViewDataSource {
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpacecraftCell", for: indexPath) as! SpacecraftCell
         return cell
-
+        
     }
-
-
+    
+    
 }
 
 

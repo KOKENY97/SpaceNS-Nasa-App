@@ -91,7 +91,7 @@
                                 <rect key="frame" x="201" y="310" width="113" height="34"/>
                                 <color key="tintColor" white="0.2108843537" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOc-Gl-z8g">
                                 <rect key="frame" x="211.5" y="288" width="51" height="15"/>
@@ -215,6 +215,7 @@
                         <outlet property="registerButton" destination="yaV-2e-ODY" id="S22-1w-k8a"/>
                         <outlet property="sizeTxtField" destination="kS5-sB-k2b" id="kJZ-4f-ptt"/>
                         <outlet property="starNameTxtField" destination="apO-4G-JUb" id="pkZ-ao-Sb9"/>
+                        <segue destination="hwI-39-nco" kind="presentation" identifier="PlanetToQuery" modalPresentationStyle="fullScreen" id="vpr-Jj-yMf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bY8-fB-Pkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -302,7 +303,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yk5-88-vVB"/>
+        <segue reference="vpr-Jj-yMf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-SpaceX-Logo-Xonly 5" width="428" height="311"/>

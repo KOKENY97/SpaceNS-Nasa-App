@@ -23,6 +23,9 @@ class PlanetsViewController: UIViewController {
     
     var habitable = String()
     
+    var token: Authentication!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,58 +42,60 @@ class PlanetsViewController: UIViewController {
         habitableButton.layer.cornerRadius = 12.5
         
         menuButton.layer.cornerRadius = 9.0
+        
+        habitableButton.isSelected = false
+        habitable = "N"
     }
     
     @IBAction func habitableButtonPressed(_ sender: UIButton) {
-        if habitableButton.isSelected == false {
-            habitableButton.isSelected = true
-            habitable = "YES"
-            habitableButton.backgroundColor = .blue
-        } else {
+        if  habitableButton.isSelected == true {
             habitableButton.isSelected = false
-            habitable = "NO"
+            habitable = "N"
             habitableButton.backgroundColor = .white
+            
+        } else {
+            habitableButton.isSelected = true
+            habitable = "S"
+            habitableButton.backgroundColor = .blue
         }
         
         
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
-        func postMethod() {
-            
-            let params: Parameters = [
-                "planetName": planetNameTxtField.text!,
-                "starName": starNameTxtField.text!,
-                "mass": massTxtField.text!,
-                "size": sizeTxtField.text!,
-                "habitable": habitable
-                
-            ]
-            
-            
-            Alamofire.request("https://desafionasa.herokuapp.com/planetas", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200 ..< 299).responseJSON { AFdata in
-                do {
-                    guard let jsonObject = try JSONSerialization.jsonObject(with: AFdata.data!) as? [String: Any] else {
-                        print("Error: Cannot convert data to JSON object")
-                        return
-                    }
-                    guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
-                        print("Error: Cannot convert JSON object to Pretty JSON data")
-                        return
-                    }
-                    guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
-                        print("Error: Could print JSON in String")
-                        return
-                    }
-                    
-                    print(prettyPrintedJson)
-                } catch {
-                    print("Error: Trying to convert JSON data to string")
-                    return
-                }
-            }
-            
+        
+        let params: [String:Any?] = [
+            "planetName": planetNameTxtField.text,
+            "mass": massTxtField.text,
+            "starName": starNameTxtField.text,
+            "size": sizeTxtField.text,
+            "habitable": habitable
+        ]
+        
+        //POST Transfer Data
+        guard let url = URL(string: "https://desafionasa.herokuapp.com/planetas?token=") else { return
         }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
+        
+        let session = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let e = error {
+                print(e.localizedDescription)
+            } else {
+                let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
+                print(jsonRes ?? nil)
+            }
+        }.resume()
+        
+        
+        
+        performSegue(withIdentifier: "PlanetToQuery", sender: true)
+        
     }
     
     

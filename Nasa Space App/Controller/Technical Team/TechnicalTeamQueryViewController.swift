@@ -18,6 +18,9 @@ class TechnicalTeamQueryViewController: UIViewController {
     
     var techs: [TechTeam] = []
     
+    var token: Authentication!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
   
@@ -46,7 +49,7 @@ class TechnicalTeamQueryViewController: UIViewController {
     }
     
     func getMethod() {
-        Alamofire.request("https://desafionasa.herokuapp.com/tripulantes")
+        Alamofire.request("https://desafionasa.herokuapp.com/tripulantes?token=")
             .responseJSON { (response) in
                 let decoder = JSONDecoder()
                 let techs: [TechTeam] = try! decoder.decode([TechTeam].self, from: response.data!)

@@ -17,6 +17,7 @@
 		E91944D227CD683B008287B2 /* Stars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91944D127CD683B008287B2 /* Stars.storyboard */; };
 		E91944D427CD6893008287B2 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944D327CD6893008287B2 /* StarsViewController.swift */; };
 		E91944D727CD69E6008287B2 /* StarsQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */; };
+		E91B13A627DB9582002C0700 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B13A527DB9582002C0700 /* Authentication.swift */; };
 		E9430BDE27D24923009B7AAD /* Technical Team.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9430BDD27D24923009B7AAD /* Technical Team.storyboard */; };
 		E9430BE127D24974009B7AAD /* TechnicalTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BE027D24974009B7AAD /* TechnicalTeamViewController.swift */; };
 		E9430BE327D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9430BE227D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift */; };
@@ -68,6 +69,7 @@
 		E91944D127CD683B008287B2 /* Stars.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stars.storyboard; sourceTree = "<group>"; };
 		E91944D327CD6893008287B2 /* StarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
 		E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsQueryViewController.swift; sourceTree = "<group>"; };
+		E91B13A527DB9582002C0700 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		E9430BDD27D24923009B7AAD /* Technical Team.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Technical Team.storyboard"; sourceTree = "<group>"; };
 		E9430BE027D24974009B7AAD /* TechnicalTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTeamViewController.swift; sourceTree = "<group>"; };
 		E9430BE227D24A3C009B7AAD /* TechnicalTeamQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalTeamQueryViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,14 @@
 				E91944D627CD69E6008287B2 /* StarsQueryViewController.swift */,
 			);
 			path = Stars;
+			sourceTree = "<group>";
+		};
+		E91B13A427DB9570002C0700 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E91B13A527DB9582002C0700 /* Authentication.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		E9430BDC27D24912009B7AAD /* Technical Team */ = {
@@ -397,6 +407,7 @@
 		E99CB42927CCF35C00974C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E91B13A427DB9570002C0700 /* Auth */,
 				E9E1039627D3DE9300F89037 /* Spacecraft */,
 				E9430BF127D28B21009B7AAD /* Tech Team */,
 				E9430BF027D28B16009B7AAD /* Passenger */,
@@ -588,6 +599,7 @@
 				E9E1039227D3CB4600F89037 /* SpacecraftViewController.swift in Sources */,
 				E9430BF527D28B45009B7AAD /* Passenger.swift in Sources */,
 				E91944C127CD2102008287B2 /* SignInViewController.swift in Sources */,
+				E91B13A627DB9582002C0700 /* Authentication.swift in Sources */,
 				E9430BE127D24974009B7AAD /* TechnicalTeamViewController.swift in Sources */,
 				E96F3B3627CFFF7A00DD8741 /* TravelCell.swift in Sources */,
 				E9E1039827D3DEAF00F89037 /* Spacecraft.swift in Sources */,

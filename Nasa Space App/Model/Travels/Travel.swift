@@ -10,23 +10,9 @@ import Foundation
 //Travel Struct
 struct Travel: Codable {
     let planetName: String
-    let spacecraftName: String
-    let duration: String
-    let distance: String
+    let spaceCraft: String
+    let duration: Float
+    let distance: Float
 }
 
-var travels: [Travel] = [
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    Travel(planetName: "Kepler", spacecraftName: "Falcon 9", duration: "2 light years", distance: "1.892E13 km"),
-    
-]
+

@@ -18,6 +18,9 @@ class PassengersQueryViewController: UIViewController {
     
     var passengers: [Passenger] = []
     
+    var token: Authentication!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +45,7 @@ class PassengersQueryViewController: UIViewController {
     }
     
     func getMethod() {
-        Alamofire.request("https://desafionasa.herokuapp.com/passageiros")
+        Alamofire.request("https://desafionasa.herokuapp.com/passageiros/naves?token=")
             .responseJSON { (response) in
                 let decoder = JSONDecoder()
                 let passengers: [Passenger] = try! decoder.decode([Passenger].self, from: response.data!)

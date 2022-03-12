@@ -17,6 +17,9 @@ class PlanetsQueryViewController: UIViewController {
     
     var planets: [Planet] = []
     
+    var token: Authentication!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +35,7 @@ class PlanetsQueryViewController: UIViewController {
     }
     
     func getMethod() {
-        Alamofire.request("https://desafionasa.herokuapp.com/planetas")
+        Alamofire.request("https://desafionasa.herokuapp.com/planetas?token=")
             .responseJSON { (response) in
                 let decoder = JSONDecoder()
                 let planets: [Planet] = try! decoder.decode([Planet].self, from: response.data!)

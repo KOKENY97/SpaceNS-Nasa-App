@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class TravelsQueryViewController: UIViewController {
     
@@ -13,6 +14,11 @@ class TravelsQueryViewController: UIViewController {
     @IBOutlet weak var travelsTableView: UITableView!
     
     @IBOutlet weak var backButton: UIButton!
+    
+    var travels: [Travel] = []
+    
+    var token: Authentication!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +31,20 @@ class TravelsQueryViewController: UIViewController {
         
         backButton.layer.cornerRadius = 9.0
         
+        getMethod()
+        
+    }
+    
+    func getMethod() {
+        Alamofire.request("https://desafionasa.herokuapp.com/viagens?token=")
+            .responseJSON { (response) in
+                let decoder = JSONDecoder()
+                let travels: [Travel] = try! decoder.decode([Travel].self, from: response.data!)
+                
+                self.travels = travels
+                self.travelsTableView.reloadData()
+                print(travels)
+            }
     }
     
 
@@ -37,10 +57,8 @@ extension TravelsQueryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TravelCell", for: indexPath) as! TravelCell
-        cell.planetNameLBl.text = travels[indexPath.row].planetName
-        cell.spacecraftNameLbl.text = travels[indexPath.row].spacecraftName
-        cell.durationLbl.text = travels[indexPath.row].duration
-        cell.distanceLbl.text = travels[indexPath.row].distance
+        let travels = travels[indexPath.row]
+        cell.configureCell(travels: travels)
         return cell
     }
     

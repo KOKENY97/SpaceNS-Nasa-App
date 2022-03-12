@@ -53,7 +53,7 @@
                                     <constraint firstAttribute="height" constant="34" id="ue4-3l-8Y1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDp-B0-cAw">
                                 <rect key="frame" x="43" y="775" width="323" height="35.5"/>
@@ -129,7 +129,7 @@
                                     <constraint firstAttribute="width" constant="323" id="fmk-GG-xgL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjQ-k0-CLA">
                                 <rect key="frame" x="60" y="331.5" width="26.5" height="14.5"/>
@@ -368,6 +368,7 @@
                         <outlet property="spacecrafttxtField" destination="Bcr-3h-CyS" id="A0l-18-u4Y"/>
                         <outlet property="specializationTxtField" destination="Q7j-ha-Puk" id="e0n-Il-vwN"/>
                         <outlet property="superEmailTxtField" destination="ASM-Xb-BBd" id="5Nw-Oh-Rmr"/>
+                        <segue destination="Red-1b-JzN" kind="presentation" identifier="TechToQuery" modalPresentationStyle="fullScreen" id="nST-xW-js1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4am-4M-QA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -668,8 +669,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hqz-gt-2Im"/>
-        <segue reference="dWf-Bl-cfn"/>
+        <segue reference="nST-xW-js1"/>
+        <segue reference="Egr-mx-bG0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-SpaceX-Logo-Xonly 3" width="220" height="83"/>

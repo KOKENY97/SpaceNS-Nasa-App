@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 
 class AccountViewController: UIViewController {
-
+    
     @IBOutlet weak var outView: UIView!
     @IBOutlet weak var innerView: UIView!
     
@@ -23,6 +23,11 @@ class AccountViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIButton!
     
+    var passenger: Passenger!
+    
+    var token: Authentication!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,12 +36,33 @@ class AccountViewController: UIViewController {
         
         menuButton.layer.cornerRadius = 8.0
         
-       
+        getMethod()
         
     }
     
-
+    
     @IBAction func menuButtonPressed(_ sender: UIButton) {
+    }
+    
+    func getMethod() {
+        Alamofire.request("https://desafionasa.herokuapp.com/passageiros?token=")
+            .responseJSON { (response) in
+                let decoder = JSONDecoder()
+                let passenger: Passenger = try! decoder.decode(Passenger.self, from: response.data!)
+                
+                self.passenger = passenger
+                
+                self.nameLbl.text = passenger.fullName
+                self.dateLbl.text = passenger.birthDate
+                self.sexLbl.text = passenger.sex
+                self.professionLbl.text = passenger.profession
+                self.emailLbl.text = passenger.email
+                self.spacecraftLbl.text = passenger.spaceCraft
+                
+                
+                
+                
+            }
     }
     
     
