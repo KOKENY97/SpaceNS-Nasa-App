@@ -91,6 +91,8 @@ class SignInViewController: UIViewController {
         
         performSegue(withIdentifier: "SignInToSettings", sender: true)
         
+        print("TOKEN: \(token)")
+        
         
     }
     

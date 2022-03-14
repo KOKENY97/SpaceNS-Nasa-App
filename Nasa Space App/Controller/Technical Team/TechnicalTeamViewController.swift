@@ -49,7 +49,7 @@ class TechnicalTeamViewController: UIViewController {
         ]
         
         //POST Transfer Data
-        guard let url = URL(string: "https://desafionasa.herokuapp.com/tripulantes?token=") else { return
+        guard let url = URL(string: "https://desafionasa.herokuapp.com/tripulantes?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImZ1bGxOYW1lIjoiS2lyayIsInNwYWNlQ3JhZnQiOiJmYWxjb245IiwiaWF0IjoxNjQ3MDkyNDkxLCJleHAiOjE2NDcxNzg4OTF9.o1YzO95tdp4-BBNnFSNGizWy-PmL3Ozc5bYN8sfw_JI") else { return
         }
         
         var request = URLRequest(url: url)

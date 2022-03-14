@@ -54,7 +54,7 @@ class SpacecraftViewController: UIViewController {
     }
     
     func getMethod() {
-        Alamofire.request("https://desafionasa.herokuapp.com/naves?token=")
+        Alamofire.request("https://desafionasa.herokuapp.com/naves?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImZ1bGxOYW1lIjoiS2lyayIsInNwYWNlQ3JhZnQiOiJmYWxjb245IiwiaWF0IjoxNjQ3MDkyNDkxLCJleHAiOjE2NDcxNzg4OTF9.o1YzO95tdp4-BBNnFSNGizWy-PmL3Ozc5bYN8sfw_JI")
             .responseJSON { (response) in
                 let decoder = JSONDecoder()
                 let spacecraft: Spacecraft = try! decoder.decode(Spacecraft.self, from: response.data!)

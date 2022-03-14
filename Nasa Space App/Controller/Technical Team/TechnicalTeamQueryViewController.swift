@@ -49,7 +49,7 @@ class TechnicalTeamQueryViewController: UIViewController {
     }
     
     func getMethod() {
-        Alamofire.request("https://desafionasa.herokuapp.com/tripulantes?token=")
+        Alamofire.request("https://desafionasa.herokuapp.com/tripulantes?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImZ1bGxOYW1lIjoiS2lyayIsInNwYWNlQ3JhZnQiOiJmYWxjb245IiwiaWF0IjoxNjQ3MDkyNDkxLCJleHAiOjE2NDcxNzg4OTF9.o1YzO95tdp4-BBNnFSNGizWy-PmL3Ozc5bYN8sfw_JI")
             .responseJSON { (response) in
                 let decoder = JSONDecoder()
                 let techs: [TechTeam] = try! decoder.decode([TechTeam].self, from: response.data!)

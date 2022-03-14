@@ -41,7 +41,7 @@ class StarsQueryViewController: UIViewController {
     }
     
     func getMethod() {
-        Alamofire.request("https://desafionasa.herokuapp.com/estrelas?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImZ1bGxOYW1lIjoiS2lyayIsInNwYWNlQ3JhZnQiOiJzdGFyc2hpcCIsImlhdCI6MTY0NzA1NjcwNSwiZXhwIjoxNjQ3MTQzMTA1fQ.0vxrXHBBj4gMDqvqCugmJKlY3INpeK_YqJt1lMsMQII")
+        Alamofire.request("https://desafionasa.herokuapp.com/estrelas?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImZ1bGxOYW1lIjoiS2lyayIsInNwYWNlQ3JhZnQiOiJmYWxjb245IiwiaWF0IjoxNjQ3MDkyNDkxLCJleHAiOjE2NDcxNzg4OTF9.o1YzO95tdp4-BBNnFSNGizWy-PmL3Ozc5bYN8sfw_JI")
             .responseJSON { (response) in
                 let decoder = JSONDecoder()
                 let stars: [Star] = try! decoder.decode([Star].self, from: response.data!)
